@@ -1,0 +1,51 @@
+* {
+  border:1px solid green;
+  padding: 0;
+  margin: 0;
+}
+.general {  
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 0.4fr 1.6fr;
+  grid-template-rows: 0.2fr 2.6fr 0.2fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Navbar Navbar"
+    "Aside Productos"
+    "Footer Footer";
+}
+
+.Navbar { grid-area: Navbar; }
+
+.Aside { grid-area: Aside; }
+
+.Footer { grid-area: Footer; }
+
+.Productos {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "p1 p2 p3"
+    "p4 p5 p6";
+  grid-area: Productos;
+}
+
+.p1 { grid-area: p1; }
+
+.p2 { grid-area: p2; }
+
+.p3 { grid-area: p3; }
+
+.p4 { grid-area: p4; }
+
+.p5 { grid-area: p5; }
+
+.p6 { grid-area: p6; }
+
+
+  
