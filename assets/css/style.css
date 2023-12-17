@@ -1,11 +1,19 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 * {
-  border:1px solid green;
   padding: 0;
   margin: 0;
 }
+
+body {
+  font-family:'Roboto', sans-serif;
+}
+
 .general {  
   display: grid;
   height: 100vh;
+  width: 100wh;
+  box-sizing: border-box;
   grid-template-columns: 0.4fr 1.6fr;
   grid-template-rows: 0.2fr 2.6fr 0.2fr;
   grid-auto-columns: 1fr;
@@ -18,34 +26,101 @@
     "Footer Footer";
 }
 
-.Navbar { grid-area: Navbar; }
+.Navbar {
+  background-color: #25527b;
+  color:white;
+  grid-area: Navbar; }
 
-.Aside { grid-area: Aside; }
+.Aside { 
+  background-color: #e7e7e7;
+  grid-area: Aside; }
 
-.Footer { grid-area: Footer; }
+.Footer { 
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  grid-area: Footer; }
 
-.Productos {  display: grid;
+.Productos { 
+  display:grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 10px 10px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "p1 p2 p3"
-    "p4 p5 p6";
-  grid-area: Productos;
+  gap:10px 10px;
+  background-color: #e7e7e7;
+
+
+ grid-area: Productos;}
+
+
+.item {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-between;
+  background-color: white;
+  margin-top:10px;
+
+}
+.item > img {
+  margin-top:10px;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+
+
 }
 
-.p1 { grid-area: p1; }
+.Navbar {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: small;
+  font-weight: 300;
+}
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: medium;
+}
 
-.p2 { grid-area: p2; }
-
-.p3 { grid-area: p3; }
-
-.p4 { grid-area: p4; }
-
-.p5 { grid-area: p5; }
-
-.p6 { grid-area: p6; }
+.cant {
+  color:gray
+}
 
 
+  .Aside {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+   align-content: center;
+    
+  }
+  .Aside-title {
+    display: flex;
+    width: 100%;
+   justify-content: center;
+   margin-top: 1rem;
+
+  }
+  .Aside-ul {
+    display: flex;
+    width: 100%;
+   justify-content: center;
+   margin-top: 1.5rem;
+
+  }
+  ul > li {
+    list-style: none;
+    padding:0.4em;
+  }
+  button {
+    width: 100%;
+    background-color:#25527b;
+    height: 1.5rem;
+    color:white;
+  }
   
